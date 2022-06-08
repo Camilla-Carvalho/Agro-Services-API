@@ -22,7 +22,7 @@ import br.gov.sp.fatec.projeto.ads.agroecommercesolution.datajpa.model.Usuario;
 import br.gov.sp.fatec.projeto.ads.agroecommercesolution.datajpa.repository.UsuarioRepository;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api")
 public class UsuarioController {
 	

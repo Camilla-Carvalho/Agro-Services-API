@@ -1,7 +1,6 @@
 package br.gov.sp.fatec.projeto.ads.agroecommercesolution.datajpa.model;
 
-import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.Date;
 
 import javax.persistence.*;
 
@@ -27,7 +26,7 @@ public class Usuario {
 	private String cpf;
 
 	@Column(name = "datanascimento")
-	private String dataNascimento;
+	private Date dataNascimento;
 	
 	@Column(name = "email")
 	private String email;
@@ -48,7 +47,7 @@ public class Usuario {
 	
 	public Usuario(Usuario _usuario) {
 		// id nome cpf dataNascimento email userLogin senha telefone endereco isAdmin
-		//this.setId(_usuario.getId());
+		this.id = _usuario.getId();
 		this.nome = _usuario.getNome();
 		this.cpf = _usuario.getCpf();
 		this.dataNascimento = _usuario.getDataNascimento();
@@ -71,11 +70,11 @@ public class Usuario {
 		this.cpf = cpf;
 	}
 
-	public String getDataNascimento() {
+	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 	
-	public void setDataNascimento(String dataNascimento) {
+	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
