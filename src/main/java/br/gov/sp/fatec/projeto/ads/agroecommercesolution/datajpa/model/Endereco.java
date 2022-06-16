@@ -2,8 +2,8 @@ package br.gov.sp.fatec.projeto.ads.agroecommercesolution.datajpa.model;
 
 import javax.persistence.*;
 
-@Entity(name = "Endereco")
-@Table(name = "endereco")
+//@Entity(name = "Endereco")
+//@Table(name = "endereco")
 public class Endereco {
  
     @Id
